@@ -14,7 +14,7 @@ public class PropertyController {
 	CategoryService categoryService;
 	@Autowired
 	PropertysService propertysService;
-
+  
 //	public String insert(Property property){
 //		propertysService.insert(property);
 //		return

@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact name="webapplication">
+    <output-path>$PROJECT_DIR$/out/artifacts/webapplication</output-path>
+    <root id="root" />
+  </artifact>
+</component>

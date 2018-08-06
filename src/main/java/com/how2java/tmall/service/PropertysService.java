@@ -2,7 +2,11 @@ package com.how2java.tmall.service;
 
 import com.how2java.tmall.pojo.Property;
 
+import java.util.List;
+
 public interface PropertysService {
+
+	int deleteByPrimaryKey(Integer id);
 
 	int insert(Property record);
 
@@ -13,4 +17,6 @@ public interface PropertysService {
 	int updateByPrimaryKeySelective(Property record);
 
 	int updateByPrimaryKey(Property record);
+
+	List<Property> list(Integer cid);
 }

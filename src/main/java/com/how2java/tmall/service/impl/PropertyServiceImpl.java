@@ -6,11 +6,18 @@ import com.how2java.tmall.service.PropertysService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class PropertyServiceImpl implements PropertysService{
 
 	@Autowired
 	PropertyMapper propertyMapper;
+
+	@Override
+	public int deleteByPrimaryKey(Integer id) {
+		return propertyMapper.deleteByPrimaryKey(id);
+	}
 
 	@Override
 	public int insert(Property record) {
@@ -35,5 +42,10 @@ public class PropertyServiceImpl implements PropertysService{
 	@Override
 	public int updateByPrimaryKey(Property record) {
 		return propertyMapper.updateByPrimaryKey(record);
+	}
+
+	@Override
+	public List<Property> list(Integer cid) {
+		return propertyMapper.list(cid);
 	}
 }
